@@ -1,0 +1,154 @@
+/*初始網頁設定*/
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+/*checkbox排版*/
+.checkbox{
+  display:flex;
+  line-height: 30px;
+  height: 75px;
+}
+.checkbox p, .checkbox input{
+  width:auto;
+}
+
+/*表單樣式*/
+.form{
+  width: 80% ;
+  margin: 0 auto;
+}
+div.input{
+  margin:10px
+}
+input, textarea{
+  width: 100%;
+  margin: 10px;
+  border: 1px solid 	#bebebe;
+  border-radius:5px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  padding: 20px;
+  line-height: 25px;
+  height: 40px;
+}
+.input{
+  display: flex;
+}
+textarea{
+  height: 120px;
+  /*若輸入同樣字元不會換行*/
+  word-wrap : break-word;
+}
+input:focus, textarea:focus {
+    outline: none;
+}
+.btn{
+  width:auto;
+  margin-left: 10px;
+  display:inline-block;
+}
+.name{
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+}
+.textarea{
+  padding: 10px;
+  font-size: 16px;
+}
+label, .feedback_textarea{
+  font-size: 16px;
+  padding: 20px;
+  line-height: 25px;
+  height: 40px;
+}
+.checkbox p{
+    font-size: 16px;
+    padding: 20px;
+    line-height: 25px;
+    height: 40px;
+}
+input#light, input#dark{
+  height: 45px;
+}
+.bottom{
+  display: flex;
+  flex-direction: column;
+}
+/*標題樣式*/
+.outBlock {
+  position: relative;
+}
+h3{
+  padding: 10px;
+  letter-spacing: 1px;
+}
+/*namecard排版*/
+.container_namecard{
+  display: flex;
+  justify-content: center;
+}
+.namecard{
+  display: flex;
+  height: 220px;
+  width: 500px;
+  padding: 10px;
+  margin: 20px;
+}
+.light{
+  background-color: aliceblue;
+  border: 2px solid #66b3ff;
+}
+.dark{
+  background-color: black;
+  border: 2px solid #8e8e8e;
+  color: white;
+}
+.img_box{
+  border:4.7px solid #9d9d9d;
+  flex-basis: 35%;
+  margin-right: 10px;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.info{
+ flex-basis: 65%;
+}
+
+@media screen and (max-width: 770px)  {
+  .form{
+  width: 100% ;
+  margin: 0 auto;
+}
+}
+
+@media screen and (max-width: 500px)  {
+  .checkbox{
+  flex-direction: column;
+}
+  .button{
+    margin-top:120px;
+  }
+  input#light, input#dark{
+  height: 0px;
+  }
+  label{
+    line-height:70px;
+  }
+}
